@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodie - Food Delivery Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Foodie Logo">
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#restaurants">Restaurants</a>
+            <a href="#categories">Categories</a>
+
+            <button id="cart-btn" class="cart-btn">
+                🛒 Cart
+                <span id="cart-count">0</span>
+            </button>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">🍴 Delicious food is waiting for you</p>
+
+            <h1>
+                Order Your
+                <span>Favorite Food</span>
+                Online
+            </h1>
+
+            <p class="hero-description">
+                Discover the best restaurants and delicious meals
+                delivered right to your doorstep.
+            </p>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search for restaurants or dishes..."
+                >
+
+                <button id="search-btn">
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="categories-section" id="categories">
+
+        <h2>Popular Categories</h2>
+
+        <p class="section-subtitle">
+            Choose what you are craving today 😋
+        </p>
+
+        <div class="category-container">
+
+            <div class="category-card" data-category="pizza">
+                <img src="category1.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+            </div>
+
+            <div class="category-card" data-category="burgers">
+                <img src="category2.jpg" alt="Burgers">
+                <h3>Burgers</h3>
+            </div>
+
+            <div class="category-card" data-category="noodles">
+                <img src="category3.jpg" alt="Noodles">
+                <h3>Noodles</h3>
+            </div>
+
+            <div class="category-card" data-category="pasta">
+                <img src="category4.jpg" alt="Pasta">
+                <h3>Pasta</h3>
+            </div>
+
+            <div class="category-card" data-category="salads">
+                <img src="category5.jpg" alt="Salads">
+                <h3>Salads</h3>
+            </div>
+
+            <div class="category-card" data-category="desserts">
+                <img src="category6.jpg" alt="Desserts">
+                <h3>Desserts</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESTAURANTS -->
+
+    <section class="restaurants-section" id="restaurants">
+
+        <div class="section-heading">
+
+            <div>
+                <h2>Popular Restaurants</h2>
+
+                <p class="section-subtitle">
+                    Explore delicious food from our restaurants
+                </p>
+            </div>
+
+            <button id="show-all-btn">
+                Show All
+            </button>
+
+        </div>
+
+
+        <div id="restaurant-list" class="restaurant-container">
+
+            <!-- JavaScript will add restaurants here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- CART SIDEBAR -->
+
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <aside id="cart-sidebar" class="cart-sidebar">
+
+        <div class="cart-header">
+
+            <h2>🛒 Your Cart</h2>
+
+            <button id="close-cart">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div id="cart-items" class="cart-items">
+
+            <p class="empty-cart">
+                Your cart is empty 😋
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>Total</span>
+
+                <strong>
+                    ₹<span id="cart-total">0</span>
+                </strong>
+
+            </div>
+
+            <button id="checkout-btn" class="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- SUCCESS MESSAGE -->
+
+    <div id="success-message" class="success-message">
+
+        <div class="success-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>Order Placed! 🎉</h2>
+
+            <p>
+                Your delicious food is on its way.
+            </p>
+
+            <button id="success-close">
+                Continue
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>🍴 Foodie</h2>
+
+            <p>
+                Delicious food. Fast delivery. Happy customers.
+            </p>
+
+            <p class="copyright">
+                © 2026 Foodie. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
